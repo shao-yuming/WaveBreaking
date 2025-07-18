@@ -1,4 +1,4 @@
-# Wave Breaking Simulation in Basilisk
+# Wave Breaking Simulation 
 
 This repository provides a **wave breaking simulation framework** built on the open-source solver **[Basilisk](http://basilisk.fr/)**.  
 It is designed to simulate **air–water two-phase breaking waves**, generate visualization-ready outputs, and analyze vortical structures using Liutex.
