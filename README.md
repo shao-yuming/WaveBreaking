@@ -37,9 +37,10 @@ It is designed to simulate **air–water two-phase breaking waves**, generate vi
    ```bash
    git clone https://github.com/shao-yuming/WaveBreaking.git
    cd WaveBreaking
-3. Compile and run ( MPI parallelism is used, and the case is 192 core, which can be changed according to requirements):
+3. Compile and Run ( MPI parallelism is used, and the case is 192 core, which can be changed according to requirements):
    ```bash
    CC99='mpicc -std=c99' qcc -O2 -Wall -D_MPI=1 wave.c -o wave -L$BASILISK/gl -lglutils -lfb_tiny -lm -disable-dimensions
+   mkdir surface && mkdir vtu
    mpirun -np 192 ./wave
    
 ---
